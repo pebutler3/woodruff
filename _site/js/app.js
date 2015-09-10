@@ -1,0 +1,1 @@
+var data=new Date,todaysDate="<h3>[ "+data.getMonth()+"/"+data.getDate()+"/"+data.getFullYear()+" ]</h3>",timeStamp=document.querySelector(".time-stamp");timeStamp.innerHTML=todaysDate;
