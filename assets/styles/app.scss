@@ -1,6 +1,6 @@
+$row-width: 80%;
+
 @import "01-plugins/plugins";
 @import "02-partials/partials";
 @import "03-media/media";
-main {
- @include grid-row;
-}
+@import "main";
