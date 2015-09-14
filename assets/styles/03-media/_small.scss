@@ -1,3 +1,29 @@
 @media #{$small-only} {
-
+	$row-width: 100%;
+	header {
+		img {
+			max-width: 100%;
+		}	
+	}
+	section.hero {
+		height: 300px;
+	}
+	main {
+		@include grid-row;	
+		.intro {
+			@include grid-column(12);
+			background: yellow;
+			height: auto;
+			h1 {
+				font-size: 46px;
+				color: orange;
+			}
+		}
+		img {
+			@include grid-column(12);
+			padding: 0;
+			width: 100%;
+			max-width: 100%;
+		}
+	}
 }
