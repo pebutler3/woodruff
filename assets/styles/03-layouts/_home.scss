@@ -1,0 +1,24 @@
+main {
+	@include grid-row;	
+	.intro {
+		@include grid-column(12);
+		background: $lt-blue;
+		height: auto;
+		h1 {
+			font-size: 46px;
+			color: orange;
+		}
+	}
+	img {
+		@include grid-column(12);
+		padding: 0;
+		width: 100%;
+		max-width: 100%;
+	}
+}
+@media #{$small-only} {
+	
+}
+@media #{$medium-up} {
+	
+}
