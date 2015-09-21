@@ -2,5 +2,14 @@ section.hero {
   @include grid-row;
   background: url(../img/hero.jpg) no-repeat center center;
   background-size: cover;
-  max-height: 400px;
+  border-bottom: 10px solid $blue;
+}
+@media #{$small-only} {
+	section.hero {
+	}
+}
+@media #{$medium-up} {
+	section.hero {
+	  max-height: 400px;
+	}	
 }
