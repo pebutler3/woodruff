@@ -29,7 +29,7 @@ gulp.task('serve', function() {
 
 // For includes
 gulp.task('fileinclude', function() {
-  gulp.src(['./assets/*.html'])
+  gulp.src(['./assets/**/*.html'])
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file'
