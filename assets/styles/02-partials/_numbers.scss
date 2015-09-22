@@ -1,0 +1,17 @@
+section.numbers-panel {
+	@include grid-row;
+	text-align: center;
+	line-height: 5px;
+	section {
+		@include grid-column(4);
+		&.cincinnati {
+			background: darken($white, 5%);
+		}
+		&.columbus {
+			background: darken($white, 10%);
+		}
+		&.dayton {
+			background: darken($white, 15%);
+		}
+	}
+}
