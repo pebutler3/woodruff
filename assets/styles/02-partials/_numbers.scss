@@ -3,7 +3,6 @@ section.numbers-panel {
 	text-align: center;
 	line-height: 5px;
 	section {
-		@include grid-column(4);
 		&.cincinnati {
 			background: darken($white, 5%);
 		}
@@ -14,4 +13,18 @@ section.numbers-panel {
 			background: darken($white, 15%);
 		}
 	}
+}
+@media #{$small-only} {
+  section.numbers-panel {
+  	section {
+		@include grid-column(12);
+  	}
+  }	
+}
+@media#{$medium-up} {
+  section.numbers-panel {
+  	section {
+		@include grid-column(4);
+  	}
+  }	
 }
