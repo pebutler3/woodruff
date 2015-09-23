@@ -9,18 +9,18 @@ header {
     background: darken($white, 5%);
     margin-top: -1em;
     ul {
-      @include grid-column(8, $center: true);
+      @include grid-column(10, $push: .4, $center: true);
       list-style: none;
-      padding: 0 0 1em 0;
       li {
         display: block;
-        margin-bottom: 1em;
-        padding-top: 1em;
-        // background: $blue;
+        // margin-bottom: 1em;
+        // padding-top: 1em;
+        margin-right: 1px;
+        background: $blue;
         float: left;
         a {
-          padding: 0 .3em;
-          color: $blue;
+          padding: 0 1em;
+          color: $white;
           font-size: 18px;
           font-weight: 200;
           letter-spacing: 10px;
