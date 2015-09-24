@@ -2,7 +2,7 @@ header {
   @include grid-row;
   img {
     display: inline-block;
-    padding: 1em 0;
+    padding: 2em 0;
   }
   nav {
     @include grid-row;
@@ -13,19 +13,22 @@ header {
       list-style: none;
       li {
         display: block;
-        // margin-bottom: 1em;
-        // padding-top: 1em;
         margin-right: 1px;
-        background: $blue;
         float: left;
-        a {
-          padding: 0 1em;
+      }
+      a {
+        display: inline-block;
+        color: $blue;
+        padding: .5em 1em .5em 1.5em;
+        font-size: 18px;
+        font-weight: 200;
+        letter-spacing: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover {
+          background: $blue;
           color: $white;
-          font-size: 18px;
-          font-weight: 200;
-          letter-spacing: 10px;
-          text-decoration: none;
-          text-transform: uppercase;
+          transition: background 300ms ease-in;
         }
       }
     }
@@ -36,6 +39,14 @@ header {
     img {
       max-width: 100%;
     } 
+    nav {
+      ul {
+        @include grid-column(12);
+        a {
+          display: inline;
+        }
+      }
+    }
   }
 }
 @media #{$medium-up} {
