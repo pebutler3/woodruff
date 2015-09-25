@@ -3,25 +3,26 @@ main {
 		background: $lt-blue;
 		height: auto;
 	.intro {
-		@include grid-column(6);
+		@include grid-column(7);
 		h1 {
 			font-size: 46px;
 			color: orange;
 		}
 	}
 	.slider {
-		@include grid-column(6);
+		img {
+			margin: 0;
+			float: right;
+		}
 	}
-	// img {
-	// 	@include grid-column(12);
-	// 	padding: 0;
-	// 	width: 100%;
-	// 	max-width: 100%;
-	// }
 }
 @media #{$small-only} {
-	
+	.slider {
+		@include grid-column(12, $collapse: true);
+	}
 }
 @media #{$medium-up} {
-	
+	main.slider {
+		@include grid-column(5, $collapse: true);
+	}
 }
