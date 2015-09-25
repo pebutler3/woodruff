@@ -60,7 +60,7 @@ gulp.task('styles', function(){
 gulp.task('scripts', function(){
   gulp.src([
     paths.assets + '/js/jquery.js',
-    paths.assets + '/js/slick.js',
+    paths.assets + '/js/slider.js',
     paths.assets + '/js/app.js',
   ])
   .pipe(concat('app.js'))
