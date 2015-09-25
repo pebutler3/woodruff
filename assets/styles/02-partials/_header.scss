@@ -1,6 +1,14 @@
 header {
   @include grid-row;
-  img {
+  img:not([logo]) {
+   // @include grid-column(3, $float: false); 
+   // display: block;
+   position: absolute;
+   max-width: 125px;
+   top: 0;
+   margin-left: -1em;
+  }
+  img[logo] {
     display: inline-block;
     padding: 2em 0;
   }
@@ -36,7 +44,7 @@ header {
 }
 @media #{$small-only} {
   header {
-    img {
+    img[logo] {
       max-width: 100%;
     } 
     nav {
@@ -51,7 +59,7 @@ header {
 }
 @media #{$medium-up} {
   header {
-    img {
+    img[logo] {
       display: block;
       margin: 0 auto;
     } 
