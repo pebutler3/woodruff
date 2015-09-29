@@ -1,7 +1,14 @@
 section.numbers-panel {
 	@include grid-row;
 	text-align: center;
-	line-height: 5px;
+	line-height: 4px;
+	color: $blue; 
+	h2 {
+		font-weight: 400;
+	}
+	h3 {
+		font-weight: 200;
+	}
 	section {
 		&.cincinnati {
 			background: darken($white, 5%);
