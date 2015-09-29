@@ -1,9 +1,9 @@
-section.hero {
+div.hero {
   @include grid-row;
   position: relative;
   background: url(../img/hero.jpg) no-repeat center center;
   background-size: cover;
-  height: 300px;
+  height: 400px;
   &:after {
 	content:'';
     position: absolute;
@@ -19,11 +19,33 @@ section.hero {
   }
 }
 @media #{$small-only} {
-	section.hero {
-	}
 }
 @media #{$medium-up} {
-	section.hero {
-	  max-height: 400px;
-	}	
+  div.hero {
+    color: $white;
+    max-height: 400px;
+    text-align: center;
+    section.intro {
+      margin-top: 1em;
+      h1 {
+        letter-spacing: 5px;
+        font-weight: 200;
+        font-size: 72px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+      }
+      p {
+        font-size: 18px;
+        max-width: 300px;
+        margin: 0 auto;
+        &:after, &:before {
+          content: '';
+          display: block;
+          margin: 1em auto;
+          border-bottom: 1px solid;
+          width: 60px;
+        }
+      }
+    }
+  }
 }
