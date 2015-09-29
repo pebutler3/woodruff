@@ -3,7 +3,6 @@ main {
     background: $lt-blue;
     height: auto;
     .intro {
-        @include grid-column(7);
         h1 {
             font-size: 46px;
             color: orange;
@@ -32,7 +31,13 @@ main {
     }
 }
 @media #{$medium-up} {
-    main.slider {
-        @include grid-column(5, $collapse: true);
+    .intro {
+        @include grid-column(6);
+    }
+    .slider {
+        @include grid-column(6, $collapse: true);
+        img {
+            height: 350px;
+        }
     }
 }
