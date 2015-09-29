@@ -2,6 +2,11 @@ main {
     @include grid-row;
     background: $white;
     height: auto;
+    section.goal {
+        p {
+            padding: 100px 0 100px 30px;
+        }
+    }
     .slider {
         img {
             margin: 0;
@@ -29,7 +34,6 @@ main {
         @include grid-column(6);
         p {
             font-size: 22px;
-            padding: 100px 0 100px 30px;
             width: 400px;
             vertical-align: middle;
         }
