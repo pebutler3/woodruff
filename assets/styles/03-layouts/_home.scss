@@ -1,38 +1,38 @@
 main {
-	@include grid-row;	
-		background: $lt-blue;
-		height: auto;
-	.intro {
-		@include grid-column(7);
-		h1 {
-			font-size: 46px;
-			color: orange;
-		}
-	}
-	.slider {
-		img {
-			margin: 0;
-			float: right;
-		}
-	}
-	.response-panel {
-		@include grid-column(12);
-		background: $blue;
-		color: $white;
-		font-size: 24px;
-		letter-spacing: 5px;
-		line-height: 10px;
-		text-align: center;
-		text-transform: uppercase;
-	}
+    @include grid-row;
+    background: $lt-blue;
+    height: auto;
+    .intro {
+        @include grid-column(7);
+        h1 {
+            font-size: 46px;
+            color: orange;
+        }
+    }
+    .slider {
+        img {
+            margin: 0;
+            float: right;
+        }
+    }
+    .response-panel {
+        @include grid-column(12);
+        background: $blue;
+        color: $white;
+        font-size: 24px;
+        letter-spacing: 5px;
+        line-height: 10px;
+        text-align: center;
+        text-transform: uppercase;
+    }
 }
 @media #{$small-only} {
-	.slider {
-		@include grid-column(12, $collapse: true);
-	}
+    .slider {
+        @include grid-column(12, $collapse: true);
+    }
 }
 @media #{$medium-up} {
-	main.slider {
-		@include grid-column(5, $collapse: true);
-	}
+    main.slider {
+        @include grid-column(5, $collapse: true);
+    }
 }
