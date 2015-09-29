@@ -46,7 +46,7 @@ header {
   header {
     img[logo] {
       max-width: 100%;
-    } 
+    }
     nav {
       ul {
         @include grid-column(12);
@@ -62,6 +62,6 @@ header {
     img[logo] {
       display: block;
       margin: 0 auto;
-    } 
+    }
   }
 }
