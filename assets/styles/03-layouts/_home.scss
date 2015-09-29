@@ -1,20 +1,14 @@
 main {
     @include grid-row;
-    background: $lt-blue;
+    background: $white;
     height: auto;
-    .intro {
-        h1 {
-            font-size: 46px;
-            color: orange;
-        }
-    }
     .slider {
         img {
             margin: 0;
             float: right;
         }
     }
-    .response-panel {
+    .blue-panel {
         @include grid-column(12);
         background: $blue;
         color: $white;
@@ -31,8 +25,14 @@ main {
     }
 }
 @media #{$medium-up} {
-    .intro {
+    section.goal {
         @include grid-column(6);
+        p {
+            font-size: 22px;
+            padding: 100px 0 100px 30px;
+            width: 400px;
+            vertical-align: middle;
+        }
     }
     .slider {
         @include grid-column(6, $collapse: true);
