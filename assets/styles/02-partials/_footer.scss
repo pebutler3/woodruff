@@ -2,6 +2,7 @@ footer {
   @include grid-row;
   background: url(../img/footer.jpg) no-repeat center center;
   background-size: cover;
+  min-height: 300px;
   a {
    color: $white;
    text-decoration: none;
