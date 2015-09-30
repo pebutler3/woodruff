@@ -9,11 +9,9 @@ main {
     }
     .slider {
         img {
+            height: 100%;
             margin: 0;
             float: right;
-        }
-        ul {
-          list-style: none;
         }
     }
     .blue-panel {
