@@ -1,12 +1,11 @@
 header {
   @include grid-row;
+  background: $white;
   img:not([logo]) {
-   // @include grid-column(3, $float: false); 
-   // display: block;
-   position: absolute;
-   max-width: 125px;
-   top: 0;
-   margin-left: -1em;
+    position: absolute;
+    max-width: 125px;
+    top: 0;
+    margin-left: -1em;
   }
   img[logo] {
     display: inline-block;
@@ -18,7 +17,6 @@ header {
     margin-top: -1em;
     ul {
       @include grid-column(10, $push: .4, $center: true);
-      list-style: none;
       li {
         display: block;
         margin-right: 1px;
