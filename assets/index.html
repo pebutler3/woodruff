@@ -6,8 +6,6 @@
  <title>Welcome • Woodruff Tree Service</title>
  <link rel="stylesheet" href="css/app.css">
 <style>
-ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
-li.bjqs-slide{position:absolute; display:none;}
 </style>
 </head>
 <body>
@@ -23,13 +21,8 @@ li.bjqs-slide{position:absolute; display:none;}
  <section class="goal">
 	<p>Our goal at Woodruff Tree Service is to provide great service and 100% customer satisfaction.</p>
  </section>
-  <div class="slider" id="slider">
-     <ul class="bjqs">
-      <li><img src="img/slide-1.jpg" alt=""></li>
-      <li><img src="img/slide-2.jpg" alt=""></li>
-      <li><img src="img/slide-3.jpg" alt=""></li>
-     </ul>
-     <!-- <img src="img/slide&#45;1.jpg" alt=""> -->
+  <div class="slider">
+   <img src="img/slide-1.jpg" alt="">
   </div>
  <section class="blue-panel">
  	<h2>24 hour response team</h2>
@@ -37,12 +30,5 @@ li.bjqs-slide{position:absolute; display:none;}
 </main>
 @@include('../assets/includes/footer.html')
 <script src="js/app.js"></script>
-<script>
-  $('#slider').bjqs({
-    'showcontrols' : false,
-    'showmarkers' : false,
-    'automatic' : true
-  });
-</script>
 </body>
 </html>
