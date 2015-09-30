@@ -1,8 +1,9 @@
 footer {
   @include grid-row;
-  background: url(../img/footer.jpg) no-repeat center center;
+  background: lighten($blue, 3%);
   background-size: cover;
   min-height: 300px;
+  border-top: 1px solid darken($blue, 10%);
   a {
    color: $white;
    text-decoration: none;
