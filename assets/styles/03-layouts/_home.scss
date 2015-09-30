@@ -12,6 +12,9 @@ main {
             margin: 0;
             float: right;
         }
+        ul {
+          list-style: none;
+        }
     }
     .blue-panel {
         @include grid-column(12);
@@ -40,8 +43,5 @@ main {
     }
     .slider {
         @include grid-column(6, $collapse: true);
-        img {
-            height: 350px;
-        }
     }
 }
