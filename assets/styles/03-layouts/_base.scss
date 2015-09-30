@@ -1,8 +1,11 @@
-// header {
-// 	img {
-// 		max-width: 100%;
-// 	}	
-// }
-// section.hero {
-// 	height: 300px;
-// }
+body {
+  background: $body-bg;
+}
+ul {
+  list-style: none;
+}
+@media #{$small-only} {
+  html, body {
+   overflow-x: hidden;
+  }
+}
