@@ -10,6 +10,7 @@ header {
   img[logo] {
     display: inline-block;
     padding: 2em 0;
+    height: 186px;
   }
   nav {
     @include grid-row;
