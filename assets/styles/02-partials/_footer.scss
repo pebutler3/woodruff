@@ -1,14 +1,13 @@
 footer {
   @include grid-row;
   background: lighten($blue, 3%);
-  background-size: cover;
   min-height: 300px;
   border-top: 1px solid darken($blue, 10%);
   color: $white;
   ul {
-    margin: 2em 1em 2em 0;
+    @include grid-column(12, $collapse: true, $push: 1);
     text-align: right;
-    float: right;
+    transform: translate(-10%, 30%);
   }
   li {
     display: block;
@@ -32,4 +31,28 @@ footer {
       clear: both;
     }
   }
+}
+.attribution {
+  @include grid-row;
+  background: $white;
+  height: 50px;
+  color: gray;
+  font-weight: 200;
+  p:first-child {
+    @include grid-column(8);
+  }
+  p + p {
+     @include grid-column(4, $float: right, $push: 1);
+     text-transform: uppercase;
+     font-size: smaller;
+     span {
+       display: inline-block;
+       position: relative;
+       background: url(../img/earth.png) no-repeat;
+       height: 22px;
+       width: 20px;
+       top: 4px;
+       right: 5px;
+     }
+   }
 }
