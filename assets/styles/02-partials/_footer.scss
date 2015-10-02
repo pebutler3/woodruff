@@ -5,16 +5,19 @@ footer {
   border-top: 1px solid darken($blue, 10%);
   color: $white;
   ul {
-    @include grid-column(12, $collapse: true, $push: 1);
-    text-align: right;
+    @include grid-column(2, $center: true, $collapse: true);
+    text-align: center;
     transform: translate(-10%, 30%);
   }
   li {
     display: block;
     a {
-     font-size: 24px;
+     font-size: 22px;
      font-weight: 200;
      text-transform: uppercase;
+     &:hover {
+       text-decoration: underline;
+     }
     }
   }
   a {
