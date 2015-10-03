@@ -46,14 +46,35 @@ header {
 }
 @media #{$small-only} {
   header {
+    img:not([logo]) {
+      display: none;
+      max-width: 100px;
+    }
     img[logo] {
       max-width: 100%;
     }
     nav {
+      a[menu-button] {
+        display: inline-block;
+        background: $orange;
+        color: $white;
+        padding: 2em 1em 1em 1em;
+        margin-bottom: -.3em;
+        text-decoration: none;
+        &:before {
+          content: "";
+          display: block;
+          width: 25px;
+          height: 25px;
+          border-top: 15px double;
+          border-bottom: 5px solid;
+        }
+      }
       ul {
         @include grid-column(12);
-        a {
-          display: inline;
+        display: none;
+        &.open {
+          display: block;
         }
       }
     }
@@ -61,9 +82,15 @@ header {
 }
 @media #{$medium-up} {
   header {
+    a[menu-button] {
+      display: none;
+    }
     img[logo] {
       display: block;
       margin: 0 auto;
+    }
+    ul {
+      @include grid-column(10, $push: .4, $center: true);
     }
   }
 }
