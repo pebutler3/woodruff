@@ -26,8 +26,14 @@ main {
     }
 }
 @media #{$small-only} {
-    .slider {
-        @include grid-column(12, $collapse: true);
+    main {
+      .slider {
+          @include grid-column(12, $collapse: true);
+      }
+      .blue-panel {
+          font-size: 16px;
+          line-height: 25px;
+      }
     }
 }
 @media #{$medium-up} {
