@@ -2,7 +2,7 @@ section.numbers-panel {
 	@include grid-row;
 	text-align: center;
 	line-height: 4px;
-	color: $blue; 
+	color: $lt-blue;
 	h2 {
 		font-weight: 400;
 	}
@@ -11,13 +11,13 @@ section.numbers-panel {
 	}
 	section {
 		&.cincinnati {
-			background: darken($white, 5%);
+			background: darken($blue, 2%);
 		}
 		&.columbus {
-			background: darken($white, 10%);
+			background: darken($blue, 4%);
 		}
 		&.dayton {
-			background: darken($white, 15%);
+			background: darken($blue, 6%);
 		}
 	}
 }
