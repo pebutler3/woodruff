@@ -1,11 +1,9 @@
-body {
+html, body {
   background: $body-bg;
+  overflow-x: hidden;
 }
 ul {
   list-style: none;
 }
 @media #{$small-only} {
-  html, body {
-   overflow-x: hidden;
-  }
 }
