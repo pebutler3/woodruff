@@ -5,8 +5,6 @@ footer {
   border-top: 1px solid darken($blue, 10%);
   color: $white;
   ul {
-    @include grid-column(2, $center: true, $collapse: true);
-    text-align: center;
     transform: translate(-10%, 30%);
   }
   li {
@@ -58,4 +56,20 @@ footer {
        right: 5px;
      }
    }
+}
+@media #{$small-only} {
+  footer {
+    ul {
+      @include grid-column(6, $push: 1);
+    }
+  }
+}
+@media #{$medium-up} {
+  footer {
+    ul {
+      @include grid-column(2, $center: true, $collapse: true);
+      text-align: center;
+      transform: translate(-10%, 30%);
+    }
+  }
 }
