@@ -22,8 +22,9 @@ gulp.task('serve', function() {
         notify: false
     });
 
-   gulp.watch(paths.assets + '/styles/app.scss', ['styles']),
+   gulp.watch(paths.assets + '/styles/**/*.scss', ['styles']),
    gulp.watch(paths.assets + '/**/*.html', ['fileinclude']),
+   gulp.watch(paths.assets + '/js/*.js', ['scripts']),
    gulp.watch("public/*", ['copy']),
    gulp.watch("assets/**/*").on('change', browserSync.reload);
 });
@@ -60,7 +61,7 @@ gulp.task('styles', function(){
 
 gulp.task('scripts', function(){
   gulp.src([
-    paths.assets + '/js/jquery.js',
+    paths.assets + '/js/classList.js',
     paths.assets + '/js/app.js'
   ])
   .pipe(concat('app.js'))
