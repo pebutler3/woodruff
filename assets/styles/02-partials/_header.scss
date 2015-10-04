@@ -5,7 +5,6 @@ header {
     position: absolute;
     max-width: 125px;
     top: 0;
-    margin-left: -1em;
   }
   a[angies-list] {
     animation: bounce 1s;
@@ -67,6 +66,10 @@ header {
           height: 25px;
           border-top: 15px double;
           border-bottom: 5px solid;
+          border-radius: 3px;
+        }
+        &:hover {
+          color: $orange;
         }
       }
       ul {
