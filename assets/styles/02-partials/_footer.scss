@@ -36,14 +36,9 @@ footer {
 .attribution {
   @include grid-row;
   background: $white;
-  height: 50px;
   color: gray;
   font-weight: 200;
-  p:first-child {
-    @include grid-column(8);
-  }
   p + p {
-     @include grid-column(4, $float: right, $push: 1);
      text-transform: uppercase;
      font-size: smaller;
      span {
@@ -63,6 +58,10 @@ footer {
       @include grid-column(6, $push: 1);
     }
   }
+  .attribution {
+    height: 100px;
+    text-align: center;
+  }
 }
 @media #{$medium-up} {
   footer {
@@ -70,6 +69,15 @@ footer {
       @include grid-column(2, $center: true, $collapse: true);
       text-align: center;
       transform: translate(-10%, 30%);
+    }
+  }
+  .section {
+    height: 50px;
+    p:first-child {
+      @include grid-column(8);
+    }
+    p + p {
+      @include grid-column(4, $float: right, $push: 1);
     }
   }
 }
